@@ -52,18 +52,20 @@ fetch(url)
             } else { }
         })
 
+        const followingdiv = document.getElementById('seguindo')
+
         fetch('https://api.github.com/users/LuizaLorien/following')
             .then(response => response.json())
             .then((data) => {
                 console.log(data)
-                console.log(data.map((data) => { return data.login }))
 
                 const friends = document.createElement('ul');
                 friends.className = '';
 
                 data.forEach((data) => {
 
-                    const friendlist = document.createElement('li');
+                    const friendlist = document.createElement('li')
+
                     friendlist.innerHTML = `
                         <img id="avatarimg" src="${data.avatar_url}">
                         <h2 id="nome">${verifyname(data.name, data.login)}</h2>  
@@ -71,7 +73,9 @@ fetch(url)
                         <h3>Seguindo: ${data.following}</h3>`
                     
                     friends.appendChild(friendlist);
+
                 })
+                followingdiv.innerHTML =friends
             })
 
     })
