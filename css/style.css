@@ -1,0 +1,105 @@
+:root {
+    --indigo: rgba(165, 180, 252, 1);
+    --black: rgba(0, 0, 0, 1);
+    --slate: rgba(148, 163, 184, 1);
+    --white: rgba(249, 249, 251, 1);
+} 
+
+* {
+    font-family: "Poppins-Bold", Helvetica;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body {
+    width: 1280px;
+    height: auto;
+}
+
+.navbar{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 30px;
+    gap: 400px;
+}
+
+.navbar h3{
+    font-size: 30px;
+}
+
+.navbar ul{
+    gap: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border: none;
+    text-decoration: none;
+
+}
+.navbar li{
+    font-family: "Poppins-Regular", Helvetica;
+    text-decoration: none;
+
+}
+.navbar a {
+    font-family: "Poppins-Regular", Helvetica;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.card{
+    width: 1200px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 300px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+.content #nome{
+    font-size: 60px;
+}
+.Dowload{
+    background-color: none;
+}
+.following-span{
+    display: flex;
+}
+.img{
+    display: flex;
+}
+#avatarimg{
+    width: 400px;
+    border-radius: 400px;
+    display: flex;
+}
+#friendavatarimg {
+    width: 100px;
+}
+
+.list-friends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
